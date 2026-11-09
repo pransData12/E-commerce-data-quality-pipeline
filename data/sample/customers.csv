@@ -1,0 +1,101 @@
+customer_id,name,email,signup_date,country
+1,Diya Smith,diya.smith1@example.com,2023-12-11,India
+2,Noah Nair,noah.nair2@example.com,2023-09-05,United Kingdom
+3,Liam Patel,liam.patel3@example.com,2024-04-28,India
+4,Isha Singh,isha.singh4@example.com,2026-04-10,United States
+5,Vikram Brown,vikram.brown5@example.com,2023-10-05,Australia
+6,Olivia Patel,,2022-12-05,India
+7,Diya Das,diya.das7@example.com,2023-07-01,Singapore
+8,Emma Menon,emma.menon8@example.com,2023-01-23,United Kingdom
+9,Meera Khan,meera.khan9@example.com,2023-07-28,India
+10,Diya Muller,diya.muller10@example.com,2024-01-11,India
+11,Arjun Singh,arjun.singh11@example.com,2022-12-03,United States
+12,Mia Patel,mia.patel12@example.com,2023-04-07,Australia
+13,Emma Tan,emma.tan13@example.com,2022-02-11,India
+14,Noah Singh,noah.singh14@example.com,2023-11-03,India
+15,Emma Patel,emma.patel15@example.com,2023-03-23,United States
+16,Noah Das,noah.das16@example.com,2023-02-24,India
+17,Arjun Menon,arjun.menon17@example.com,2023-05-01,United Kingdom
+18,Kabir Sharma,kabir.sharma18@example.com,2022-07-16,India
+19,Olivia Menon,olivia.menon19@example.com,2023-06-30,United Kingdom
+20,Isha Menon,isha.menon20@example.com,2023-11-11,Germany
+21,Arjun Khan,arjun.khan21@example.com,2022-11-15,United States
+22,Ananya Tan,ananya.tan22@example.com,2022-04-30,United States
+23,Kabir Patel,kabir.patel23@example.com,2022-12-19,United Kingdom
+24,Lukas Reddy,lukas.reddy24@example.com,2022-07-01,Germany
+25,Noah Brown,noah.brown25example.com,2022-12-08,Germany
+26,Liam Sharma,liam.sharma26@example.com,2023-07-26,India
+27,Vikram Singh,,2022-04-14,United States
+28,Olivia Reddy,olivia.reddy28@example.com,2023-11-13,India
+29,Arjun Sharma,arjun.sharma29@example.com,2022-07-24,Germany
+30,Isha Das,isha.das30@example.com,2024-03-26,United States
+31,Isha Iyer,isha.iyer31@example.com,2023-10-30,India
+32,Meera Sharma,meera.sharma32@example.com,2022-09-06,India
+33,Diya Das,diya.das33@example.com,2023-05-29,India
+34,Arjun Patel,arjun.patel34@example.com,2022-04-11,United Kingdom
+35,Lukas Khan,lukas.khan35@example.com,2022-04-01,India
+36,Diya Sharma,diya.sharma36@example.com,2024-05-21,India
+37,Olivia Reddy,olivia.reddy37@example.com,2024-01-02,Singapore
+38,Olivia Iyer,olivia.iyer38@example.com,2022-05-21,United Kingdom
+39,Rohan Tan,rohan.tan39@example.com,2022-09-15,India
+40,Liam Brown,liam.brown40@example.com,2022-06-30,India
+41,Kabir Menon,kabir.menon41@example.com,2022-12-27,Australia
+42,Noah Patel,noah.patel42@example.com,2022-09-23,United Kingdom
+43,Emma Iyer,emma.iyer43@example.com,2022-10-27,United States
+44,Ananya Brown,ananya.brown44@example.com,2023-04-28,India
+45,Diya Patel,diya.patel45@example.com,2022-06-22,India
+46,Mia Brown,mia.brown46@example.com,2024-03-16,India
+47,Isha Muller,isha.muller47@example.com,2023-10-26,United Kingdom
+48,Lukas Khan,lukas.khan48@example.com,2023-11-25,India
+49,Liam Menon,liam.menon49@example.com,2022-06-04,India
+50,Noah Sharma,noah.sharma50@example.com,2025-08-08,United Kingdom
+51,Noah Nair,noah.nair51@example.com,2024-02-02,Singapore
+52,Meera Khan,meera.khan52@example.com,2022-06-09,United Kingdom
+53,Ananya Smith,ananya.smith53@example.com,2023-11-17,India
+54,Isha Brown,isha.brown54@example.com,2022-11-23,India
+55,Isha Menon,isha.menon55@example.com,2023-12-20,India
+56,Aarav Reddy,aarav.reddy56@example.com,2023-03-13,India
+57,Arjun Das,arjun.das57@example.com,2024-01-02,India
+58,Kabir Wilson,kabir.wilson58@example.com,2022-05-15,India
+59,Emma Rao,emma.rao59@example.com,2022-12-21,United States
+60,Liam Khan,liam.khan60@example.com,2022-09-07,Singapore
+61,Lukas Nair,lukas.nair61@example.com,2025-11-05,Australia
+62,Emma Nair,emma.nair62@example.com,2022-10-09,India
+63,Ananya Patel,ananya.patel63@example.com,2022-12-15,India
+64,Mia Das,mia.das64@example.com,2022-04-27,India
+65,Vikram Smith,vikram.smith65@example.com,2023-10-07,India
+66,Ananya Menon,ananya.menon66@example.com,2023-05-17,India
+67,Lukas Rao,lukas.rao67@example.com,2024-01-27,India
+68,Ananya Brown,ananya.brown68@example.com,2023-10-05,United Kingdom
+69,Diya Das,diya.das69@example.com,2022-05-16,India
+70,Isha Rao,isha.rao70@example.com,2022-03-05,Singapore
+71,Noah Iyer,noah.iyer71@example.com,2023-01-21,India
+72,Meera Singh,meera.singh72@example.com,2023-03-15,India
+73,Isha Tan,isha.tan73@example.com,2022-08-08,India
+74,Kabir Khan,kabir.khan74@example.com,2023-12-15,India
+75,Liam Reddy,liam.reddy75@example.com,2023-06-15,India
+76,Isha Singh,isha.singh76@example.com,2023-11-14,Australia
+77,Ananya Smith,ananya.smith77@example.com,2022-04-10,India
+78,Meera Wilson,meera.wilson78@example.com,2024-01-14,India
+79,Sneha Iyer,sneha.iyer79@example.com,2022-07-07,United States
+80,Liam Brown,liam.brown80@example.com,2023-02-13,India
+81,Mia Nair,mia.nair81@example.com,2023-02-05,United States
+82,Vikram Patel,vikram.patel82@example.com,2024-01-19,India
+83,Kabir Smith,kabir.smith83@example.com,2022-09-10,Germany
+84,Olivia Gupta,olivia.gupta84@example.com,2022-08-08,India
+85,Liam Muller,liam.muller85@example.com,2022-11-06,India
+86,Emma Singh,emma.singh86@example.com,2022-11-26,United States
+87,Diya Khan,diya.khan87@example.com,2022-06-15,Germany
+88,Rohan Iyer,rohan.iyer88@example.com,2022-06-10,India
+89,Noah Khan,noah.khan89@example.com,2022-07-30,United States
+90,Olivia Sharma,olivia.sharma90@example.com,2023-03-03,India
+91,Vikram Tan,vikram.tan91@example.com,2022-11-10,India
+92,Noah Singh,noah.singh92@example.com,2022-12-24,India
+93,Olivia Gupta,olivia.gupta93@example.com,2023-10-18,United Kingdom
+94,Vikram Sharma,vikram.sharma94@example.com,2022-08-08,India
+95,Lukas Tan,lukas.tan95@example.com,2024-04-09,United Kingdom
+96,Rohan Reddy,rohan.reddy96@example.com,2023-11-17,India
+97,Meera Muller,meera.muller97@example.com,2022-06-09,Germany
+98,Liam Tan,,2022-10-14,Germany
+99,Liam Khan,liam.khan99@example.com,2022-06-17,India
+100,Kabir Tan,kabir.tan100@example.com,2022-09-06,India

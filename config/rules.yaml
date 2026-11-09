@@ -1,0 +1,124 @@
+# Data-quality rules. Each rule is one entry; `type` selects the check in validators.py.
+#   severity: error   -> offending rows are quarantined (kept out of the warehouse)
+#   severity: warning -> reported, but rows are still loaded
+as_of: "2025-07-01"   # "today" for future-date checks (fixed => reproducible runs)
+
+rules:
+  # ---------------- customers ----------------
+  - id: null_email
+    type: not_null
+    table: customers
+    column: email
+    severity: warning
+    description: Customer email is missing
+
+  - id: invalid_email
+    type: regex
+    table: customers
+    column: email
+    pattern: '[^@\s]+@[^@\s]+\.[A-Za-z]{2,}'
+    severity: warning
+    description: Customer email is not a valid address format
+
+  - id: duplicate_customer_id
+    type: unique
+    table: customers
+    column: customer_id
+    severity: error
+    description: customer_id appears more than once
+
+  - id: future_signup_date
+    type: date_not_future
+    table: customers
+    column: signup_date
+    severity: error
+    description: Signup date is in the future (or unparseable)
+
+  # ---------------- products ----------------
+  - id: non_positive_catalog_price
+    type: range
+    table: products
+    column: catalog_price
+    min: 0.01
+    severity: error
+    description: Catalog price is zero or negative
+
+  # ---------------- orders ----------------
+  - id: invalid_status
+    type: allowed_values
+    table: orders
+    column: status
+    values: [completed, shipped, pending, cancelled, returned]
+    severity: error
+    description: Order status is not one of the allowed values
+
+  - id: orphan_order_customer
+    type: foreign_key
+    table: orders
+    column: customer_id
+    ref_table: customers
+    ref_column: customer_id
+    severity: error
+    description: Order references a customer that does not exist
+
+  - id: order_before_signup
+    type: date_order
+    table: orders
+    column: order_date
+    key: customer_id
+    ref_table: customers
+    ref_key: customer_id
+    ref_column: signup_date
+    severity: error
+    description: Order was placed before the customer signed up
+
+  - id: future_order_date
+    type: date_not_future
+    table: orders
+    column: order_date
+    severity: error
+    description: Order date is in the future (or unparseable)
+
+  - id: total_amount_mismatch
+    type: sum_match
+    table: orders
+    key: order_id
+    column: total_amount
+    child_table: order_items
+    child_key: order_id
+    child_qty: quantity
+    child_price: unit_price
+    tolerance: 0.01
+    severity: error
+    description: Order total does not equal the sum of its line items
+
+  # ---------------- order_items ----------------
+  - id: invalid_quantity
+    type: range
+    table: order_items
+    column: quantity
+    min: 1
+    max: 100
+    severity: error
+    description: Quantity is outside 1-100
+
+  - id: price_inconsistency
+    type: price_consistency
+    table: order_items
+    column: unit_price
+    product_column: product_id
+    ref_table: products
+    ref_key: product_id
+    ref_price: catalog_price
+    tolerance: 0.15
+    severity: error
+    description: Unit price deviates more than 15% from catalog price
+
+  - id: orphan_order_item
+    type: foreign_key
+    table: order_items
+    column: order_id
+    ref_table: orders
+    ref_column: order_id
+    severity: error
+    description: Order item references an order that does not exist
